@@ -2,9 +2,22 @@
 
 <html lang="en">
 <title>Student Activities Organization</title>
+<head>
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript" src="../scripts/gdocs_delegate.js"></script>
+  <script type="text/javascript">
+ 
+  // Load the Visualization API and the piechart package.
+  google.load('visualization', '1.0', {'packages':['corechart']});
+  
+  // Set a callback to run when the Google Visualization API is loaded.
+  google.setOnLoadCallback(queryRemainingMoney);
+
+</script> 
+</head>
 <body>
-<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/js/bootstrap.min.js"></script>
-<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap.min.css" rel="stylesheet">
+<script src="//origin.bootstrapcdn.com/twitter-bootstrap/2.2.1/js/bootstrap.min.js"></script>
+<link href="//origin.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap.min.css" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 <style>
@@ -57,10 +70,16 @@ header { text-align: center; }
 	<dd>To start/renew an organization or club, complete the anti-hazing form (PDF) and attach it via email, or turn it into suite 428 (EH 4N). Whomever signs the form should be the primary contact of the club (i.e. the president). That's it! You'll be registered as a club.</dd>
 
 	<dt>How can I make purchases?</h2>
-	<dd>Want to make a purchase on behalf of a club or organization? Please submit a line item <a href="https://docs.google.com/spreadsheet/viewform?formkey=dDVMX25vS3UzVnh4VXVrMGtPcFczRVE6MQ#gid=0">to the line item form</a> ahead of time.</dd>
+	<dd>Money Left for <span id="month_span">this month</span>: <span id="money_remaining" style="color:orange">...</span></dd>	
+	<dd>Want to make a purchase on behalf of a club or organization? <b>Please submit a line item <a href="https://docs.google.com/spreadsheet/viewform?formkey=dDVMX25vS3UzVnh4VXVrMGtPcFczRVE6MQ#gid=0">to the line item form</a> at least two days ahead of time.</b></dd>
 
-	<dt>Where is the P-card?</dt>
+	<dt>Where are the P-cards?</dt>
+	<dd>Both p-cards on are on the corkboard in the East Hall kitchen! Please sign the p-card out on the sign-out sheet above the p-cards.</dd>
+
 	<dt>How do I get reimbursed?</dt>
+	<dd> Reimbursements require you to fill out a reimnbursement form, also on the East Hall Kitchen corkboard, write the reason for the purchase on the back of
+		the receipt, and place both the receipt and form into the reimbursements envelope on the corkboard.</dd>
+
 	<dt>What should I do with receipts?</dt>
 	<dd>All answers about finances can be found in the EH1 Kitchen! The corkboard on the right wall has the P-card, and folders for receipts.</dd>
 </dl>
